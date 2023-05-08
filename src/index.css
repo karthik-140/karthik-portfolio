@@ -20,3 +20,15 @@ h1 {
   font-style: italic;
   margin-bottom: 1em;
 }
+
+.resume img{
+  width: 800px;
+  height: 1200px;
+}
+
+@media screen and (max-width: 890px) {
+  .resume img {
+    width: 80vw;
+    height: auto;
+  }
+}

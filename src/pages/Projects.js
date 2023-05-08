@@ -66,8 +66,8 @@ const Projects = () => {
           and other librabries like Redux, React Router, Bootstrap5.
         </p>
         <p>
-          Visit the Website and Github repository of the project using
-          the link displayed on the project.
+          Visit the Website and Github repository of the project using the link
+          displayed on the project.
         </p>
       </div>
       <ul

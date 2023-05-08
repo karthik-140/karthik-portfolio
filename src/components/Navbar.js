@@ -24,13 +24,20 @@ const HeaderNavbar = () => {
             style={{ borderRadius: "50%" }}
             onClick={() => setShowProfileImg(!showProfileImg)}
           />
-          {showProfileImg && <img
-            className="profile_img_display"
-            src={ProfileImg}
-            alt="Profile"
-            width="150px"
-            style={{ borderRadius: "1rem", position: "absolute", top: "5rem", left: "5rem" }}
-          />}
+          {showProfileImg && (
+            <img
+              className="profile_img_display"
+              src={ProfileImg}
+              alt="Profile"
+              width="150px"
+              style={{
+                borderRadius: "1rem",
+                position: "absolute",
+                top: "5rem",
+                left: "5rem",
+              }}
+            />
+          )}
           <Navbar.Brand className="me-auto">SHANIGARAM KARTHIK</Navbar.Brand>
         </div>
         <button className="nav_toggle_btn" onClick={NavToggleHandler}>
@@ -51,13 +58,9 @@ const HeaderNavbar = () => {
               </NavLink>
             </li>
             <li onClick={() => setShowToggleLinks(false)}>
-              <a
-                href="https://drive.google.com/drive/folders/1a87h5_llXxCuOXl3IqXTTm0ktTwX4EcP"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <NavLink to="/resume" activeclassName="navlink">
                 Resume
-              </a>
+              </NavLink>
             </li>
             <li onClick={() => setShowToggleLinks(false)}>
               <a
@@ -80,16 +83,15 @@ const HeaderNavbar = () => {
           {/* <NavLink to="/contact" activeclassName="navlink">
             Contact
           </NavLink> */}
-          {/* <NavLink to="/resume" activeclassName="navlink"> */}
-
-          <a
+          <NavLink to="/resume" activeclassName="navlink">
+            {/* <a
             href="https://drive.google.com/drive/folders/1a87h5_llXxCuOXl3IqXTTm0ktTwX4EcP"
             target="_blank"
             rel="noreferrer"
-          >
+          > */}
             Resume
-          </a>
-          {/* </NavLink> */}
+            {/* </a> */}
+          </NavLink>
           <a
             href="https://www.linkedin.com/in/karthik-shanigaram-259064203/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUI7bS%2BlvRiuNB2eOjcaeew%3D%3D"
             target="_blank"

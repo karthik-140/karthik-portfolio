@@ -17,7 +17,7 @@
   flex-direction: column;
   gap: 3em;
   position: absolute;
-  top: 4em;
+  top: 3em;
   font-weight: 500;
 }
 
@@ -27,14 +27,23 @@
 }
 .card_img {
   object-fit: cover;
-  transition: 5s;
+  /* transition: 1s; */
 }
 .card:hover .card_img {
-  transform: scale(1.5, 1.3);
+  /* transform: scale(1.5, 1.3); */
+  /* visibility: hidden; */
+  z-index: -100;
+}
+
+.card:hover{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 .project_description {
   width: 100vw;
+  position: relative;
+  z-index: -500;
   background-color: #6e07f3;
   padding: 6rem 6rem;
   padding-top: 3rem;
@@ -64,7 +73,7 @@
   }
   .card:hover .external_links {
     gap: 2em;
-    top: 2em;
+    top: 1em;
   }
   .card h5{
     font-size: .9rem;

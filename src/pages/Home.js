@@ -86,9 +86,9 @@ const Home = () => {
         </li>
       </ul>
       <Button
-        variant="warning"
+        variant="secondary"
         onClick={() => history.push("/projects")}
-        className="p-2 projects_btn"
+        className="p-2 px-4 projects_btn"
       >
         <b>Projects</b>
       </Button>
