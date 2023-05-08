@@ -1,8 +1,20 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
+import {
+  AiFillInstagram,
+  AiFillFacebook,
+  AiFillTwitterSquare,
+  AiFillLinkedin,
+  AiOutlineGithub,
+} from "react-icons/ai";
+//import CodingImg from "../assets/Coding.png";
 
-//import ProfileImg from "../assets/20220507_170804.jpg";
+import "./Home.css";
+//import ProfileImg from "../assets/ProfileImg.jpg";
 
 const Home = () => {
+  const history = useHistory();
   return (
     <section
       className="d-flex flex-column justify-content-center align-items-center"
@@ -11,13 +23,14 @@ const Home = () => {
         height: "100vh",
       }}
     >
-      <h1 style={{ fontFamily: "cursive", color: "#6E07F3" }}>
+      <h1 style={{ fontWeight: "900", color: "#6E07F3" }}>
         Welcome to My Portfolio
       </h1>
-      <h1 className="p-sm-5 mx-3 mt-5">
-        I am <strong>S.Karthik</strong>, experienced as a{" "}
-        <strong>Frontend Developer.</strong> I build user Interfaces using{" "}
-        <strong>React Js.</strong>{" "}
+      <h1 className="p-sm-5 mx-3 mt-3">
+        <b>
+          I am a skilled Frontend Developer with a talent for creating
+          beautiful, intuitive user interfaces using React Js.
+        </b>
       </h1>
       {/* <img
         src={ProfileImg}
@@ -25,6 +38,60 @@ const Home = () => {
         width="150px"
         style={{ borderRadius: "10%" }}
       /> */}
+      <ul className="social_icons">
+        <li>
+          <a
+            href="https://instagram.com/karthik_sk.14?igshid=ZGUzMzM3NWJiOQ=="
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillInstagram />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/karthik.akv.94?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillFacebook />
+          </a>
+        </li>
+        <li>
+          <a
+            href=" https://twitter.com/Karthik11140?t=wCbzWL087MUDURF0nydeAQ&s=08"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillTwitterSquare />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/karthik-shanigaram-259064203/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillLinkedin />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/karthik-140"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineGithub />
+          </a>
+        </li>
+      </ul>
+      <Button
+        variant="warning"
+        onClick={() => history.push("/projects")}
+        className="p-2 projects_btn"
+      >
+        <b>Projects</b>
+      </Button>
     </section>
   );
 };

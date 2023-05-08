@@ -66,6 +66,14 @@
     gap: 2em;
     top: 2em;
   }
+  .card h5{
+    font-size: .9rem;
+    padding: 0;
+    font-weight: bold;
+  }
+  .external_links a{
+    font-size: .8rem;
+  }
 }
 
 @media screen and (max-width:560px) {
