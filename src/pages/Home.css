@@ -1,6 +1,8 @@
 .social_icons{
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   align-items: center;
   align-content: center;
@@ -13,11 +15,20 @@
 }
 
 .social_icons a{
-    color: rgb(255, 0, 212);
+  padding: .5rem;
+  font-size: 40px;
+  color: rgb(255, 0, 212);
+  
 }
 
 @media screen and (max-width: 575px) {
   .projects_btn{
     margin-top: 2rem;
+  }
+  .social_icons a{
+    padding: 0rem;
+    font-size: 30px;
+    color: rgb(255, 0, 212);
+    
   }
 }

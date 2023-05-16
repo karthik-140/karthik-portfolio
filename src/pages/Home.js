@@ -7,7 +7,9 @@ import {
   AiFillTwitterSquare,
   AiFillLinkedin,
   AiOutlineGithub,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
+import {MdEmail} from "react-icons/md";
 //import CodingImg from "../assets/Coding.png";
 
 import "./Home.css";
@@ -15,6 +17,12 @@ import "./Home.css";
 
 const Home = () => {
   const history = useHistory();
+
+  // const recipientEmail = 'saif@gmail.com';
+
+  // const mailHandler = () => {
+  //   window.location.href = `mailto:${recipientEmail}`;
+  // };
   return (
     <section
       className="d-flex flex-column justify-content-center align-items-center"
@@ -82,6 +90,21 @@ const Home = () => {
             rel="noreferrer"
           >
             <AiOutlineGithub />
+          </a>
+        </li>
+        <li >
+        <a
+            href= "mailto:shanigaramkarthik@gmail.com"
+            // target="_blank"
+            // rel="noreferrer"
+            // onClick={mailHandler}
+          >
+            <MdEmail />
+          </a>
+        </li>
+        <li>
+          <a href= "https://wa.me/9700043841" >
+            <AiOutlineWhatsApp />
           </a>
         </li>
       </ul>

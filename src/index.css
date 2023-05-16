@@ -24,11 +24,32 @@ h1 {
 .resume img{
   width: 800px;
   height: 1200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.resume a{
+  position: fixed;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  top: 30%;
+  right: 0%;
+  /* transform: translate(-50%, -50%); */
+  background-color: rgb(167, 238, 238);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 890px) {
   .resume img {
-    width: 80vw;
+    width: 95vw;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .resume a{
+    right: 20%;
+    top: 90%;
+    bottom: 0%;
   }
 }
