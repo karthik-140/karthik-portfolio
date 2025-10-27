@@ -9,7 +9,7 @@ import {
   AiOutlineGithub,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import {MdEmail} from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 //import CodingImg from "../assets/Coding.png";
 
 import "./Home.css";
@@ -32,12 +32,11 @@ const Home = () => {
       }}
     >
       <h1 style={{ fontWeight: "900", color: "#6E07F3" }}>
-        Welcome to My Portfolio
+        Creating Experiences, Not Just Interfaces
       </h1>
       <h1 className="p-sm-5 mx-3 mt-3">
         <b>
-          I am a skilled Frontend Developer with a talent for creating
-          beautiful, intuitive user interfaces using React Js.
+          I’m a skilled Software Developer with a passion for designing and developing intuitive, high-performance web applications using React.js and Node.js.
         </b>
       </h1>
       {/* <img
@@ -93,17 +92,17 @@ const Home = () => {
           </a>
         </li>
         <li >
-        <a
-            href= "mailto:shanigaramkarthik@gmail.com"
-            // target="_blank"
-            // rel="noreferrer"
-            // onClick={mailHandler}
+          <a
+            href="mailto:shanigaramkarthik@gmail.com"
+          // target="_blank"
+          // rel="noreferrer"
+          // onClick={mailHandler}
           >
             <MdEmail />
           </a>
         </li>
         <li>
-          <a href= "https://wa.me/9700043841" >
+          <a href="https://wa.me/9700043841" target="_blank" rel="noreferrer">
             <AiOutlineWhatsApp />
           </a>
         </li>
