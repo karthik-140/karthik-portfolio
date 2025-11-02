@@ -16,35 +16,40 @@ const Projects = () => {
       title: "E - Commerce Website",
       img: `${EcommerceImg}`,
       url: "https://e-commerce-site-2c82f.web.app",
-      git: "https://github.com/karthik-140/e-commerce-website",
+      gitFe: "https://github.com/karthik-140/e-commerce-website",
+      gitBe: null,
     },
     {
       id: "2",
       title: "Expense Tracker",
       img: `${ExpenseTrackerImg}`,
       url: "https://expense-tracker-aa33e.web.app",
-      git: "https://github.com/karthik-140/Expense-Tracker",
+      gitFe: "https://github.com/karthik-140/Expense-Tracker",
+      gitBe: null,
     },
     {
       id: "3",
       title: "Mail Box Client",
       img: `${MailBoxClientImg}`,
       url: "https://mail-box-client-8f262.web.app",
-      git: "https://github.com/karthik-140/mail-box-client",
+      gitFe: "https://github.com/karthik-140/mail-box-client",
+      gitBe: null,
     },
     {
       id: "4",
       title: "Expense Tracker",
       img: `${ExpenseTrackerImg2}`,
       url: "https://expensetracker140.netlify.app/",
-      git: "https://github.com/karthik-140/Expense_Tracker_Frontend",
+      gitFe: "https://github.com/karthik-140/Expense_Tracker_Frontend",
+      gitBe: "https://github.com/karthik-140/Expense_Tracker_Backend",
     },
     {
       id: "5",
       title: "Chat Application",
       img: `${ChatApplicationImg}`,
       url: "https://chat-app140.netlify.app/",
-      git: "https://github.com/karthik-140/Chat_App_Frontend",
+      gitFe: "https://github.com/karthik-140/Chat_App_Frontend",
+      gitBe: "https://github.com/karthik-140/Chat_App_Backend",
     },
   ];
 
@@ -55,14 +60,22 @@ const Projects = () => {
       <Card className="ms-5 p-3 card">
         <Card.Img src={project.img} variant="top" className="card_img" />
         <div className="external_links">
-          <div className="external_link_git">
-            <AiFillGithub />{" "}
-            <a href={`${project.git}`} target="_blank" rel="noreferrer">
-              {project.git}
-            </a>
+          <div className="external_link_git ">
+            <div>
+              <AiFillGithub color="white" />{" "}
+              <a href={`${project.gitFe}`} target="_blank" rel="noreferrer">
+                {project.gitFe}
+              </a>
+            </div>
+            <div>
+              <a href={`${project.gitBe}`} target="_blank" rel="noreferrer">
+                <AiFillGithub color="white" />
+                {project.gitBe}
+              </a>
+            </div>
           </div>
           <div className="external_link_site">
-            <FiExternalLink />{" "}
+            <FiExternalLink color="white" />{" "}
             <a href={`${project.url}`} target="_blank" rel="noreferrer">
               {project.url}
             </a>

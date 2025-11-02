@@ -11,9 +11,10 @@
 .card:hover .external_links {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 1rem;
+  align-items: center;
   position: absolute;
-  top: 3em;
+  /* top: 3em; */
   font-weight: 500;
 }
 

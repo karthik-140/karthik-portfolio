@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import ProfileImg from "../assets/ProfileImg.jpg";
 
 import "./Navbar.css";
 
 const HeaderNavbar = () => {
   const [showToggleLinks, setShowToggleLinks] = useState(false);
-  const [showProfileImg, setShowProfileImg] = useState(false);
+  // const [showProfileImg, setShowProfileImg] = useState(false);
+  const history = useHistory();
 
   const NavToggleHandler = () => {
     setShowToggleLinks(!showToggleLinks);
@@ -21,10 +22,11 @@ const HeaderNavbar = () => {
             src={ProfileImg}
             alt="Profile"
             width="40px"
-            style={{ borderRadius: "50%" }}
-            onClick={() => setShowProfileImg(!showProfileImg)}
+            style={{ borderRadius: "50%", cursor: "pointer" }}
+            // onClick={() => setShowProfileImg(!showProfileImg)}
+            onClick={() => history.push("/home")}
           />
-          {showProfileImg && (
+          {/* {showProfileImg && (
             <img
               className="profile_img_display"
               src={ProfileImg}
@@ -37,7 +39,7 @@ const HeaderNavbar = () => {
                 left: "5rem",
               }}
             />
-          )}
+          )} */}
           <Navbar.Brand className="me-auto">SHANIGARAM KARTHIK</Navbar.Brand>
         </div>
         <button className="nav_toggle_btn" onClick={NavToggleHandler}>
